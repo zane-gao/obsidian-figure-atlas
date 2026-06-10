@@ -9,7 +9,7 @@ Turn scientific papers into Obsidian-ready figure and table atlases.
 
 This repository packages the Codex skill `$paper-figure-atlas`. It helps an agent collect official figure/table candidates from arXiv source, arXiv HTML, official PDFs, project pages, or proceedings, then write compact notes about visual evidence, figure design taste, and reusable research insight.
 
-这个仓库提供一个 Codex skill：`$paper-figure-atlas`。它面向科研阅读和论文写作训练：优先从官方来源采集图表候选资源，再把每张图表放回论文证据链中解读，而不是只把图片无脑堆进笔记。
+这个仓库提供一个 skill：`$paper-figure-atlas`。它面向科研阅读和论文写作训练：优先从官方来源采集图表候选资源，再把每张图表放回论文证据链中解读，而不是只把图片无脑堆进笔记。
 
 ## Why Use It / 为什么值得用
 
@@ -127,19 +127,6 @@ See [`examples/demo_atlas.md`](examples/demo_atlas.md). The example uses synthet
 
 示例文件只使用虚构论文和自绘 SVG，不包含真实论文图表。实际使用时，请在图表附近保留 source links，并在公开再分发前确认版权和使用场景。
 
-## Design Principles / 设计原则
-
-- Do not invent venues, author teams, experiment settings, captions, table numbers, or metrics.
-- Do not treat ar5iv or arXiv HTML missing-image placeholders as valid figures.
-- Do not publish copyrighted paper figures as if they were newly created assets.
-- Do not write long abstract praise; tie every taste judgment to visible figure/table evidence.
-- Keep the final note useful for reading, writing, and slide-making.
-
-- 不编造 venue、作者团队、实验设置、caption、表格编号或指标。
-- 不把 ar5iv / arXiv HTML 缺图占位图当成有效 figure。
-- 不把受版权保护的论文图表当成自有素材公开再分发。
-- 不写空泛夸奖；每个 taste 判断都必须贴着具体图表证据讲。
-- 让产物同时服务论文精读、写作学习和汇报备稿。
 
 ## Contributing / 贡献
 
