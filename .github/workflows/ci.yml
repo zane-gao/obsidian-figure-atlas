@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Validate skill metadata
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          text = Path("SKILL.md").read_text(encoding="utf-8")
+          if not text.startswith("---\n"):
+              raise SystemExit("SKILL.md must start with frontmatter")
+          frontmatter = text.split("---", 2)[1]
+          if "name: paper-figure-atlas" not in frontmatter:
+              raise SystemExit("SKILL.md must keep name: paper-figure-atlas")
+          if "description:" not in frontmatter:
+              raise SystemExit("SKILL.md must include description")
+          for required in [
+              "references/source-priority.md",
+              "references/figure-taxonomy.md",
+              "references/aesthetic-rubric.md",
+              "references/obsidian-template.md",
+              "scripts/collect_arxiv_assets.py",
+              "scripts/validate_obsidian_atlas.py",
+          ]:
+              if not Path(required).exists():
+                  raise SystemExit(f"Missing required file: {required}")
+          print("Skill metadata looks good")
+          PY
+
+      - name: Compile scripts
+        run: python -m py_compile scripts/collect_arxiv_assets.py scripts/validate_obsidian_atlas.py
+
+      - name: Check script CLIs
+        run: |
+          python scripts/collect_arxiv_assets.py --help
+          python scripts/validate_obsidian_atlas.py --help
+
+      - name: Validate synthetic example atlas
+        run: python scripts/validate_obsidian_atlas.py examples/demo_atlas.md --manifest examples/manifest.json

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic result summary table</title>
+  <desc id="desc">A synthetic table showing validation checks for demo assets.</desc>
+  <rect width="1200" height="520" fill="#f8f8f8"/>
+  <text x="80" y="78" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#202833">Table 1. Synthetic Validation Summary</text>
+  <rect x="80" y="126" width="1040" height="280" rx="8" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+  <rect x="80" y="126" width="1040" height="66" rx="8" fill="#26384f"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="22">
+    <text x="120" y="168" font-weight="700" fill="#ffffff">Setting</text>
+    <text x="438" y="168" font-weight="700" fill="#ffffff">Metric</text>
+    <text x="790" y="168" font-weight="700" fill="#ffffff">Result</text>
+    <line x1="80" y1="262" x2="1120" y2="262" stroke="#e2e6eb" stroke-width="2"/>
+    <line x1="380" y1="126" x2="380" y2="406" stroke="#e2e6eb" stroke-width="2"/>
+    <line x1="730" y1="126" x2="730" y2="406" stroke="#e2e6eb" stroke-width="2"/>
+    <text x="120" y="235" fill="#303b48">Synthetic demo</text>
+    <text x="438" y="235" fill="#303b48">Checked local assets</text>
+    <text x="790" y="235" fill="#19733a" font-weight="700">3 / 3</text>
+    <text x="120" y="330" fill="#303b48">Synthetic demo</text>
+    <text x="438" y="330" fill="#303b48">Broken links</text>
+    <text x="790" y="330" fill="#19733a" font-weight="700">0</text>
+  </g>
+  <text x="80" y="458" font-family="Arial, Helvetica, sans-serif" font-size="19" fill="#677380">All values are synthetic and exist only to exercise atlas validation.</text>
+</svg>

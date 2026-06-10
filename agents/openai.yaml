@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文图表图谱"
+  short_description: "将论文图表整理为 Obsidian 图谱"
+  default_prompt: "使用 $paper-figure-atlas，根据这份论文列表构建 Obsidian figure atlas。"

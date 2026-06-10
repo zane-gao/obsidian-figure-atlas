@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-10T00:00:00+00:00",
+  "generator": "paper-figure-atlas/examples/synthetic",
+  "papers": [
+    {
+      "paper_key": "demo-paper",
+      "input": "synthetic demo paper",
+      "title": "Demo Paper: A Synthetic Example for Figure Atlas",
+      "year": "2026",
+      "authors": [
+        "Atlas Demo Team"
+      ],
+      "links": {
+        "repository": "https://github.com/zane-gao/obsidian-figure-atlas"
+      },
+      "assets": [
+        {
+          "paper_key": "demo-paper",
+          "asset_id": "demo-paper:synthetic:fig01",
+          "source_type": "synthetic",
+          "source_url": "https://github.com/zane-gao/obsidian-figure-atlas",
+          "local_path": "assets/demo-paper/fig01_hero_overview.svg",
+          "figure_or_table_id": "Fig. 1",
+          "caption": "Synthetic hero overview for demonstrating atlas structure.",
+          "inferred_role": "hero",
+          "confidence": "high",
+          "notes": "Synthetic placeholder created for repository documentation; not a real paper figure."
+        },
+        {
+          "paper_key": "demo-paper",
+          "asset_id": "demo-paper:synthetic:fig02",
+          "source_type": "synthetic",
+          "source_url": "https://github.com/zane-gao/obsidian-figure-atlas",
+          "local_path": "assets/demo-paper/fig02_method_pipeline.svg",
+          "figure_or_table_id": "Fig. 2",
+          "caption": "Synthetic method pipeline for demonstrating figure role analysis.",
+          "inferred_role": "method",
+          "confidence": "high",
+          "notes": "Synthetic placeholder created for repository documentation; not a real paper figure."
+        },
+        {
+          "paper_key": "demo-paper",
+          "asset_id": "demo-paper:synthetic:table01",
+          "source_type": "synthetic",
+          "source_url": "https://github.com/zane-gao/obsidian-figure-atlas",
+          "local_path": "assets/demo-paper/table01_result_summary.svg",
+          "figure_or_table_id": "Table 1",
+          "caption": "Synthetic result summary table for demonstrating table embeds.",
+          "inferred_role": "table",
+          "confidence": "high",
+          "notes": "Synthetic placeholder created for repository documentation; not a real paper table."
+        }
+      ],
+      "text_artifacts": []
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Synthetic hero overview for Obsidian Figure Atlas</title>
+  <desc id="desc">A synthetic diagram showing the flow from paper list to visual evidence atlas.</desc>
+  <rect width="1200" height="520" fill="#f7f9fb"/>
+  <rect x="58" y="54" width="1084" height="412" rx="22" fill="#ffffff" stroke="#d8dee9" stroke-width="2"/>
+  <text x="92" y="116" font-family="Arial, Helvetica, sans-serif" font-size="38" font-weight="700" fill="#162033">Obsidian Figure Atlas</text>
+  <text x="92" y="158" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#526071">from paper list to reusable visual evidence</text>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="92" y="230" width="205" height="112" rx="16" fill="#e8f3ff" stroke="#8dbbe8"/>
+    <text x="122" y="278" font-size="24" font-weight="700" fill="#0d4774">Paper facts</text>
+    <text x="122" y="312" font-size="17" fill="#275675">title, venue, links</text>
+    <path d="M317 286 H405" stroke="#61738a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M405 286 l-16 -10 v20 z" fill="#61738a"/>
+    <rect x="430" y="230" width="205" height="112" rx="16" fill="#eef8ee" stroke="#97c897"/>
+    <text x="462" y="278" font-size="24" font-weight="700" fill="#22632d">Official assets</text>
+    <text x="462" y="312" font-size="17" fill="#3f7045">figures, tables, PDF</text>
+    <path d="M655 286 H743" stroke="#61738a" stroke-width="4" stroke-linecap="round"/>
+    <path d="M743 286 l-16 -10 v20 z" fill="#61738a"/>
+    <rect x="768" y="230" width="205" height="112" rx="16" fill="#fff3db" stroke="#dfb45c"/>
+    <text x="802" y="278" font-size="24" font-weight="700" fill="#7a4a00">Taste notes</text>
+    <text x="802" y="312" font-size="17" fill="#765828">evidence and design</text>
+  </g>
+  <text x="92" y="414" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#526071">Synthetic demo image. No copyrighted paper figure is included.</text>
+</svg>
